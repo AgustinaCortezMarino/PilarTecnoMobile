@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import { Tabs } from "./Tabs";
+import Home from "../screens/Home";
 import Login from "../screens/Login";
 const Stack = createStackNavigator();
 export default AppStack = (props) => {
