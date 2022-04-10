@@ -1,14 +1,18 @@
 import React, { Component } from "react";
 import Home from "../screens/Home";
-import Login from "../screens/Login";
+import List from "../screens/List";
+import Profile from "../screens/Profile";
+import Map from "../screens/Map";
 
 import { createStackNavigator } from "@react-navigation/stack";
-const PostsStack = createStackNavigator();
-export const PostsStackScreen = () => {
+const HomeStack = createStackNavigator();
+export const HomeStackScreen = () => {
   return (
-    <PostsStack.Navigator>
-      <PostsStack.Screen name="Home" component={Home} />
-      <PostsStack.Screen name="Login" component={Login} />
-    </PostsStack.Navigator>
+    <HomeStack.Navigator>
+      <HomeStack.Screen name="Home" component={Home} />
+      <HomeStack.Screen name="List" component={List} />
+      <HomeStack.Screen name="Profile" component={Profile} />
+      <HomeStack.Screen name="Map" component={Map} />
+    </HomeStack.Navigator>
   );
 };

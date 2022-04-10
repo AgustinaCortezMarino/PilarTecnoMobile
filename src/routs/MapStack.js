@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import Map from "../screens/Map";
 
 import { createStackNavigator } from "@react-navigation/stack";
-const PostsStack = createStackNavigator();
-export const PostsStackScreen = () => {
+const MapStack = createStackNavigator();
+export const MapStackScreen = () => {
   return (
-    <PostsStack.Navigator>
-      <PostsStack.Screen name="Map" component={Map} />
-    </PostsStack.Navigator>
+    <MapStack.Navigator>
+      <MapStack.Screen name="Map" component={Map} />
+    </MapStack.Navigator>
   );
 };
